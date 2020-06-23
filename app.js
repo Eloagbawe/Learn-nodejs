@@ -1,13 +1,21 @@
-var fullName = require("./modules-exports-require.js");
-var deets = require("./require-exports");
-var subjects = require("./require.js");
-var greet = require("./function_constructor.js");
-var greet2 = require("./hello.js").greet;
+var fs = require ("fs");
 
-fullName();
+fs.readFile("./hello.txt", "utf8", (err,data) => {
+    if (err) throw err;
+    console.log(data);
+});
 
-subjects.subject1();
+fs.writeFile("./hello.txt", "My name is Kome",(err, data) =>{
+    if (err) throw err;
+    console.log("content saved!");
+});
 
-console.log(deets.name);
-greet.greet();
-greet2();
+fs.appendFile("./hello.txt", " And I am a boy", (err,data) => {
+    if (err) throw err;
+    console.log("content edited!");
+});
+fs.open("./newFile.txt", "w", (err, fd) => {
+    if (err) throw err;
+    console.log("file opened!");
+});
+console.log("Yayy!");
