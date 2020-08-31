@@ -9,5 +9,8 @@ var schoolDetails = {
       }
 }
 
-schoolDetails.fullDetails();
-console.log(schoolDetails["faculty"]);
+// schoolDetails.fullDetails();
+// console.log(schoolDetails["faculty"]);
+
+var [,,,school] = ["uniben","jane","doe"];
+console.log(school);
