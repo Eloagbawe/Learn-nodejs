@@ -23,3 +23,8 @@ const arto = {
   
 // setInterval(arto.greet, 1000)
 setTimeout(arto.greet.bind(arto), 1000);
+
+var n = {"name":"terry","age":23}
+console.log(n)
+var s = {...n,"name":"rosa"}
+console.log(s)

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Eloagbawe/Learn-nodejs/issues"
   },
-  "homepage": "https://github.com/Eloagbawe/Learn-nodejs#readme"
+  "homepage": "https://github.com/Eloagbawe/Learn-nodejs#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
